@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/868eb547dd.js" crossorigin="anonymous"></script>
+    <title>대화창 | Kakao Clone</title>
+</head>
+<body>
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span class="status-bar__clock">13:53</span>
+            </div>
+            <div class="status-bar__column">
+                <i class="far fa-clock"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-wifi"></i>
+                <span calss="status-bar__battery-level">100%</span>
+                <i class="fas fa-battery-full"></i>          
+            </div>
+        </div>
+        <header classs="header">
+            <i class="fas fa-arrow-left fa-2x" onclick="history.back()"></i>
+            <div class="header__header-column">
+                <h1 class="header__title">대화창</h1>
+            </div>
+            <div class="header__header-column">
+                <span class="header__icon">
+                    <i class="fas fa-search"></i>
+                </span>
+                <span class="header__icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+        </header>
+        <main class="chat">
+            <ul class="chat__messages">
+                <span class="chat__timestamp">2020년 4월 28일 화요일</span>
+                <li class="incoming-message message">
+                    <img src="images/avatar.jpg" class="g-avatar message__avatar" />
+                    <div class="message__content">
+                        <span class="message__author">Deer</span>
+                        <div class="message__bubble">
+                            Going Home!
+                        </div>
+                    </div>
+                    <span class="message__timestamp"></span>
+                </li>
+                <li class="incoming-message message">
+                    <div class="message__content">
+                        <span class="message__timestamp"></span>
+                        <div class="message__bubble">
+                            Drive Safely!
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </main>
+        <div class="chat__write">
+            <div class="chat__write-column">
+                <i class="far fa-plus-square"></i>
+            </div>
+            <div class="chat__write-column">
+                <div>
+                    <input type="text" placeholder="메세지 보내기" class="chat__write-input">
+                </div>
+                <div class="chat__write-column">
+                    <span class="chat__write-icon">
+                        <i class="far fa-smile"></i>
+                    </span>
+                    <span class="chat__write-icon">
+                        #
+                    </span>
+                </div>
+            </div>
+            <div class="chat__write-column">
+                <i class="fas fa-microphone"></i>
+            </div>
+        </div>
+</body>
+</html>
