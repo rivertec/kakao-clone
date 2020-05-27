@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>대화창 | Kakao Clone</title>
 </head>
-<body>
+<body class="chat__body">
     <div class="top-bar">
         <div class="status-bar">
             <div class="status-bar__column">
@@ -43,22 +43,20 @@
             <span class="chat__timestamp">2020년 4월 28일 화요일</span>
             <li class="incoming-message message">
                 <div class="crop">
-                    <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+                    <img src="images/avatar.jpg" class="friend__avatar" />
                 </div>
                 <div class="message__content">
                     <span class="message__author">Deer</span>
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         Going Home!
-                    </div>
+                    </span>
                 </div>
-                <span class="message__timestamp"></span>
             </li>
-            <li class="incoming-message message">
+            <li class="sent-message message">
                 <div class="message__content">
-                    <span class="message__timestamp"></span>
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         Drive Safely!
-                    </div>
+                    </span>
                 </div>
             </li>
         </ul>
