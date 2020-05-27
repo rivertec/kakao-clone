@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  padding: 50px;
+}
+
+.button {
+  display: inline-block;
+  width: 250px;
+  height: 70px;
+  background-color: grey;
+  border-radius: 35px;
+  font-size: 25px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  border: 0;
+  outline: 0;
+}
+
+.button:active{
+  background-color: lightgrey;
+}
+
+.니꼬 {
+  height: 200px;
+  width: 200px;
+  padding-top: 50px;
+  padding-left: 25px;
+}

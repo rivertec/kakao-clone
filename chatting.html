@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/868eb547dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <title>채팅 | Kakao Clone</title>
 </head>
 <body>
+    <div class="top-bar">
         <div class="status-bar">
             <div class="status-bar__column">
                 <span class="status-bar__clock">13:53</span>
@@ -19,7 +21,7 @@
                 <i class="fas fa-battery-full"></i>          
             </div>
         </div>
-        <header classs="header">
+        <header class="header">
             <div class="header__header-column">
                 <h1 class="header__title">채팅</h1>
             </div>
@@ -36,53 +38,57 @@
                 <span class="header__icon">
                     <a href="settings.html">
                         <i class="fas fa-cog"></i>
-                    </a>                </span>
+                    </a>
+                </span>
             </div>
         </header>
+    </div>
         <main class="chats">
-            <ul class="chat__list">
-                <li class="chats__chat chat">
-                    <a href="chat.html">
-                        <div class="chat__colomn">
-                            <img class="chat__avatar g-avatar" src="images/avatar.jpg" />
-                            <div class="chat__content">
-                                <span class="chat__username">
-                                    Deer
+            <a href="chat.html">
+                <ul class="chat__list">
+                    <li class="chats__chat friend friend--lg">
+                        <div class="friend__column">
+                            <div class="crop">
+                                <img src="images/avatar.jpg" class="m-avatar friend__avatar" />
+                            </div>
+                            <div class="friend__content">
+                                <span class="friend__name">
+                                    Liam Kim
                                 </span>
-                                <span class="chat__preview">
-                                    Going Home!
+                                <span class="friend__bottom-text">
+                                    studying
                                 </span>
                             </div>
                         </div>
-                        <div class="chat__colomn">
-                            <span class="chat__timestamp">Yesterday</span>
+                        <div class="friend__column">
+                            <div class="friend__now-listening">
+                                <span class="chat__timestamp">Yesterday</span>
+                            </div>
                         </div>
-                    </a>
-                </li>
-
-            </ul>
-
-
+                    </li>
+                </ul>
+            </a>
         </main>
         <nav class="nav">
             <ul class="nav__list">
-               <li class="nav__list-item">
-                   <a href="friends.html" class="nav__list-link">
+                <li class="nav__list-item">
+                    <a href="friends.html" class="nav__list-link">
                         <i class="far fa-user"></i>
                     </a>
                 </li>
-               <li class="nav__list-item">
-                   <a href="index.html" class="nav__list-link">
+                <li class="nav__list-item">
+                    <a href="chatting.html" class="nav__list-link">
+                        <div class="nav__badge">8</div>
                         <i class="fas fa-comment"></i>
                     </a>
                 </li>
-               <li class="nav__list-item">
-                   <a href="find.html" class="nav__list-link">
+                <li class="nav__list-item">
+                    <a href="find.html" class="nav__list-link">
                         <i class="fas fa-search"></i>
                     </a>
                 </li>
-               <li class="nav__list-item">
-                   <a href="more.html" class="nav__list-link">
+                <li class="nav__list-item">
+                    <a href="more.html" class="nav__list-link">
                        <i class="fas fa-ellipsis-h"></i>
                     </a>
                 </li>
